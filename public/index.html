@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Westchester Cockapoos | Family-Raised Puppies in Westchester, NY</title>
+<meta name="description" content="Family-raised Cocker Spaniel x Mini Goldendoodle puppies in Westchester County, NY. Three puppies, ready for their new homes at 8 weeks. Meet the parents, Chewy and Rabbit.">
+<link rel="canonical" href="https://westchestercockapoos.com/">
+<meta property="og:title" content="Westchester Cockapoos | Family-Raised Puppies">
+<meta property="og:description" content="Three Cocker Spaniel x Mini Goldendoodle puppies, raised in our home in Westchester, NY.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://westchestercockapoos.com/">
+<meta property="og:image" content="https://westchestercockapoos.com/images/litter.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fbf6ee; --sand:#f1e4cf; --honey:#c98a3d; --honey-dark:#a56c27;
+    --cocoa:#4a3426; --ink:#2b211b; --muted:#6f5f53; --white:#fff;
+    --radius:18px; --shadow:0 10px 30px rgba(74,52,38,.10);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:Nunito,system-ui,sans-serif;font-size:18px;line-height:1.6}
+  img{max-width:100%;display:block}
+  a{color:var(--honey-dark)}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--cocoa);line-height:1.15;margin:0 0 .5em}
+  h1{font-size:clamp(2.2rem,6vw,3.6rem)}
+  h2{font-size:clamp(1.7rem,4vw,2.4rem)}
+  h3{font-size:1.35rem}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  section{padding:72px 0}
+  .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-weight:700;font-size:.8rem;color:var(--honey-dark);margin-bottom:.6em}
+  .lead{font-size:1.15rem;color:var(--muted);max-width:640px}
+  .center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:10;background:rgba(251,246,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--sand)}
+  header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:Fraunces,serif;font-weight:700;font-size:1.25rem;color:var(--cocoa);text-decoration:none}
+  .nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+  .nav ul a{color:var(--cocoa);text-decoration:none;font-weight:600;font-size:.95rem}
+  @media(max-width:720px){.nav ul li:not(:last-child){display:none}}
+
+  .btn{display:inline-block;background:var(--honey);color:var(--white);padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;transition:background .2s,transform .2s}
+  .btn:hover{background:var(--honey-dark);transform:translateY(-1px)}
+  .btn.ghost{background:transparent;color:var(--cocoa);border:2px solid var(--cocoa)}
+  .btn.ghost:hover{background:var(--cocoa);color:var(--white)}
+  .btn.sm{padding:9px 18px;font-size:.9rem}
+
+  /* hero */
+  .hero{padding:64px 0 80px}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+  .hero p.lead{margin-bottom:1.6em}
+  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+  .badge{display:inline-block;background:var(--sand);color:var(--cocoa);padding:6px 14px;border-radius:999px;font-weight:700;font-size:.85rem;margin-bottom:18px}
+  @media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+
+  /* photo frames: show the photo if it exists, otherwise a soft placeholder */
+  .photo{position:relative;background:linear-gradient(135deg,var(--sand),#e8d3b3);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}
+  .photo::before{content:"🐾";font-size:3rem;opacity:.35}
+  .photo::after{content:attr(data-label);position:absolute;bottom:12px;left:0;right:0;text-align:center;font-weight:700;color:var(--cocoa);opacity:.55;font-size:.9rem}
+  .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .photo.tall{aspect-ratio:1/1}
+
+  /* parents */
+  .parents{background:var(--white)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+  @media(max-width:860px){.grid3{grid-template-columns:1fr 1fr}}
+  @media(max-width:640px){.grid2,.grid3{grid-template-columns:1fr}}
+  .card{background:var(--cream);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+  .parents .card{background:var(--cream)}
+  .card .photo{margin:-22px -22px 20px;border-radius:var(--radius) var(--radius) 0 0;box-shadow:none}
+  .tag{display:inline-block;font-size:.8rem;font-weight:700;color:var(--honey-dark);text-transform:uppercase;letter-spacing:.08em}
+  .card p{margin:.3em 0;color:var(--muted)}
+
+  /* puppies */
+  .pup .status{display:inline-block;padding:4px 12px;border-radius:999px;font-size:.8rem;font-weight:700;background:#e3f1e1;color:#2f6b2a;margin-bottom:8px}
+  .pup .status.reserved{background:#f6e2d6;color:#9a4a1c}
+  .pup dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:12px 0 18px;font-size:.95rem}
+  .pup dt{font-weight:700;color:var(--cocoa)}
+  .pup dd{margin:0;color:var(--muted)}
+
+  /* included */
+  .included{background:var(--white)}
+  .checks{list-style:none;padding:0;margin:32px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:14px 32px}
+  .checks li{padding-left:34px;position:relative}
+  .checks li::before{content:"✓";position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--honey);color:#fff;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center}
+  @media(max-width:640px){.checks{grid-template-columns:1fr}}
+
+  /* steps */
+  .steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px}
+  .step{background:var(--white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+  .step::before{counter-increment:s;content:counter(s);display:flex;width:40px;height:40px;border-radius:50%;background:var(--sand);color:var(--cocoa);font-family:Fraunces,serif;font-weight:700;align-items:center;justify-content:center;margin-bottom:14px}
+  .step p{margin:0;color:var(--muted);font-size:.95rem}
+  @media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+  /* faq */
+  .faq{max-width:760px;margin:36px auto 0}
+  details{background:var(--white);border-radius:14px;padding:18px 22px;margin-bottom:12px;box-shadow:var(--shadow)}
+  summary{cursor:pointer;font-weight:700;color:var(--cocoa);list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";float:right;font-size:1.3rem;line-height:1;color:var(--honey)}
+  details[open] summary::after{content:"–"}
+  details p{margin:.8em 0 0;color:var(--muted)}
+
+  /* contact */
+  .contact{background:var(--cocoa);color:#f4e9da}
+  .contact h2{color:#fff}
+  .contact .lead{color:#e6d6c2}
+  .contact-box{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+  .contact .btn.ghost{color:#fff;border-color:#fff}
+  .contact .btn.ghost:hover{background:#fff;color:var(--cocoa)}
+  .safety{max-width:640px;margin:36px auto 0;font-size:.92rem;color:#d9c7b1;border-top:1px solid rgba(255,255,255,.15);padding-top:20px}
+
+  footer{background:#3a291e;color:#bfa98f;text-align:center;padding:24px 0;font-size:.85rem}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">🐾 Westchester Cockapoos</a>
+    <ul>
+      <li><a href="#parents">Parents</a></li>
+      <li><a href="#puppies">Puppies</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="btn sm" href="#contact">Contact us</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="badge">3 puppies · Ready for homes in January 2027</span>
+        <h1>Family-raised puppies from our home in Westchester, NY</h1>
+        <p class="lead">Our Mini Goldendoodle Chewy and our Cocker Spaniel Rabbit just welcomed a litter of three. They're growing up underfoot in our house, with kids, noise, and lots of cuddles. In a few weeks they'll be ready to meet their families.</p>
+        <div class="ctas">
+          <a class="btn" href="#puppies">Meet the puppies</a>
+          <a class="btn ghost" href="#contact">Ask about a puppy</a>
+        </div>
+      </div>
+      <div class="photo tall" data-label="The litter"><img src="images/litter.jpg" alt="Chewy and Rabbit's litter of three puppies" onerror="this.remove()"></div>
+    </div>
+  </section>
+
+  <!-- PARENTS -->
+  <section class="parents" id="parents">
+    <div class="wrap center">
+      <div class="eyebrow">Meet the parents</div>
+      <h2>Chewy &amp; Rabbit</h2>
+      <p class="lead">Both parents are our own family dogs. You're welcome to meet them when you visit.</p>
+      <div class="grid2" style="text-align:left">
+        <div class="card">
+          <div class="photo" data-label="Chewy"><img src="images/chewy.jpg" alt="Chewy, the Mini Goldendoodle dad" onerror="this.remove()"></div>
+          <span class="tag">Dad</span>
+          <h3>Chewy</h3>
+          <p><strong>Mini Goldendoodle</strong> (Golden Retriever × Poodle)</p>
+          <p>Friendly, goofy, and always up for a game of fetch. He gives the litter the Doodle smarts and low-shedding coat genes.</p>
+        </div>
+        <div class="card">
+          <div class="photo" data-label="Rabbit"><img src="images/rabbit.jpg" alt="Rabbit, the Cocker Spaniel mom" onerror="this.remove()"></div>
+          <span class="tag">Mom</span>
+          <h3>Rabbit</h3>
+          <p><strong>Cocker Spaniel</strong></p>
+          <p>Sweet, gentle, and a devoted mom. She brings the Cocker's soft eyes, silky ears, and big heart.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUPPIES -->
+  <section id="puppies">
+    <div class="wrap center">
+      <div class="eyebrow">The litter</div>
+      <h2>Meet the puppies</h2>
+      <p class="lead">Cocker Spaniel × Mini Goldendoodle. Born November 2026, ready to go home at 8 weeks. New photos every week as they grow.</p>
+      <div class="grid3" style="text-align:left">
+
+        <div class="card pup">
+          <div class="photo" data-label="Puppy 1"><img src="images/puppy1.jpg" alt="Puppy 1" onerror="this.remove()"></div>
+          <span class="status">Available</span>
+          <h3>Puppy 1</h3>
+          <dl><dt>Sex</dt><dd>To be announced</dd><dt>Color</dt><dd>To be announced</dd><dt>Ready</dt><dd>January 2027</dd></dl>
+          <a class="btn sm" href="#contact">Ask about this puppy</a>
+        </div>
+
+        <div class="card pup">
+          <div class="photo" data-label="Puppy 2"><img src="images/puppy2.jpg" alt="Puppy 2" onerror="this.remove()"></div>
+          <span class="status">Available</span>
+          <h3>Puppy 2</h3>
+          <dl><dt>Sex</dt><dd>To be announced</dd><dt>Color</dt><dd>To be announced</dd><dt>Ready</dt><dd>January 2027</dd></dl>
+          <a class="btn sm" href="#contact">Ask about this puppy</a>
+        </div>
+
+        <div class="card pup">
+          <div class="photo" data-label="Puppy 3"><img src="images/puppy3.jpg" alt="Puppy 3" onerror="this.remove()"></div>
+          <span class="status">Available</span>
+          <h3>Puppy 3</h3>
+          <dl><dt>Sex</dt><dd>To be announced</dd><dt>Color</dt><dd>To be announced</dd><dt>Ready</dt><dd>January 2027</dd></dl>
+          <a class="btn sm" href="#contact">Ask about this puppy</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INCLUDED -->
+  <section class="included">
+    <div class="wrap">
+      <div class="eyebrow">Every puppy goes home with</div>
+      <h2>A healthy, happy start</h2>
+      <ul class="checks">
+        <li>A full check-up by our veterinarian</li>
+        <li>First round of puppy vaccinations</li>
+        <li>Age-appropriate deworming</li>
+        <li>Written vet and vaccination records</li>
+        <li>A blanket that smells like mom and the litter</li>
+        <li>A starter bag of the food they're eating</li>
+        <li>Raised in our home around everyday sights and sounds</li>
+        <li>Our phone number, for questions any time after</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="wrap center">
+      <div class="eyebrow">How it works</div>
+      <h2>From hello to homecoming</h2>
+      <div class="steps" style="text-align:left">
+        <div class="step"><h3>Reach out</h3><p>Text, call, or email us. Tell us a little about your family and your home.</p></div>
+        <div class="step"><h3>Come visit</h3><p>Meet the puppies, plus Chewy and Rabbit, at our home in Westchester.</p></div>
+        <div class="step"><h3>Pick your pup</h3><p>Choose your puppy and we'll hold them for you until they're ready.</p></div>
+        <div class="step"><h3>Go home</h3><p>Bring your puppy home at 8 weeks, with records and a starter kit.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="padding-top:0">
+    <div class="wrap center">
+      <div class="eyebrow">Questions</div>
+      <h2>Frequently asked</h2>
+      <div class="faq" style="text-align:left">
+        <details>
+          <summary>What breed are the puppies?</summary>
+          <p>They're a Cocker Spaniel × Mini Goldendoodle cross. Mom is a Cocker Spaniel and dad is a Mini Goldendoodle (Golden Retriever × Poodle), so the puppies are part Cocker, part Poodle, and part Golden, a close cousin of the classic Cockapoo.</p>
+        </details>
+        <details>
+          <summary>How big will they get?</summary>
+          <p>Every puppy is different, but based on the parents we expect a small-to-medium adult dog. We're happy to share Chewy's and Rabbit's sizes when you reach out.</p>
+        </details>
+        <details>
+          <summary>Will they shed?</summary>
+          <p>Poodle genes often mean a lower-shedding coat, but with a mixed litter no one can promise a non-shedding or hypoallergenic dog. If allergies are a concern, spend time with the puppies before deciding.</p>
+        </details>
+        <details>
+          <summary>When can they go home?</summary>
+          <p>At 8 weeks old, in January 2027, after their vet check and first shots. New York doesn't allow puppies to be sold younger than that, and we wouldn't want to anyway.</p>
+        </details>
+        <details>
+          <summary>Can we visit before deciding?</summary>
+          <p>Yes, and we encourage it. Get in touch and we'll set up a time to come meet the puppies and both parents.</p>
+        </details>
+        <details>
+          <summary>What's the price?</summary>
+          <p>Please contact us for pricing and availability.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap center">
+      <h2>Interested in a puppy?</h2>
+      <p class="lead">We'd love to hear from you. Text or call, or send us an email, and tell us a bit about your family.</p>
+      <div class="contact-box">
+        <a class="btn" href="sms:+10000000000">Text us</a>
+        <a class="btn ghost" href="tel:+10000000000">Call (000) 000-0000</a>
+        <a class="btn ghost" href="mailto:hello@westchestercockapoos.com?subject=Puppy%20inquiry">Email us</a>
+      </div>
+      <p class="safety"><strong>Our promise:</strong> we're a family in Westchester County, NY, not a broker. You'll always meet your puppy in person before taking them home, and we will never ask you to pay by gift card or wire transfer.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Westchester Cockapoos · Westchester County, New York</div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Westchester Cockapoos","url":"https://westchestercockapoos.com/"}
+</script>
+</body>
+</html>
